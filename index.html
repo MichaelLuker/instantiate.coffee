@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel=icon href=/favicon.png>
+        <title>Coffee Time!</title>
+        <script type="text/javascript" src="make.js"></script>
+        <link rel="stylesheet" type="/text/css" href="style.css">
+    </head>
+    <body>
+        <center>
+        <div id="upper">
+            <div id="upperLeft">
+                <a>Make sure to sign in to your google account to get the most accurate results from the map.</a>
+                <br/>
+                <iframe id="map" width="800" height="600" frameborder="0" style="border:0"
+                src="https://www.google.com/maps/embed/v1/search?q=coffee+near+me&key=AIzaSyBFS0zhlxlILYISoSWv6vZz_Ei5xTerVcY" allowfullscreen></iframe>
+            </div>
+            <div id="upperRight">
+                <input type="radio" id="search" name="mapType" onclick="InstantiateCoffee.Functions.setMap('search')" checked>
+                <label for="genderChoice2">Coffee Shop's in the Area</label>
+                <input type="radio" id="place" name="mapType" onclick="InstantiateCoffee.Functions.setMap('place')" >
+                <label for="genderChoice1">Nearest Coffee Shop</label>
+            </div>
+        </div>
+        </center>
+        <div id="lower">
+            <center>
+            <div id="ButtonDiv" item-width="200">
+                <input id="Button" type="button" value="Click Me!" onclick='InstantiateCoffee.Functions.buttonClick()'/>
+            </div>
+            
+            <div id="CoffeeHolder">
+            </div>
+        </center>
+        </div>
+    </body>
+</html>
